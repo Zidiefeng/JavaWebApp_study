@@ -53,13 +53,15 @@ public class mailDemo01 {
 
         //image part
         MimeBodyPart image = new MimeBodyPart();
-        DataHandler dh = new DataHandler(new FileDataSource(""));
+        DataHandler dh = new DataHandler(new FileDataSource("C:\\Users\\sunka\\Desktop\\learn-java\\code\\JavaWeb_study\\extensions\\mail-java\\src\\luluxiu.jpg"));
         image.setDataHandler(dh);
         image.setContentID("jpg");
 
         //txt part
         MimeBodyPart text = new MimeBodyPart();
-        text.setContent("This is a complex email","text/html;charset=UTF-8");
+        text.setContent("This is a complex email with <img src='cid:jpg'> lulu graph ","text/html;charset=UTF-8");
+        // cid: ContentID
+
 
         //describe relationship of the parts
         MimeMultipart multi = new MimeMultipart();

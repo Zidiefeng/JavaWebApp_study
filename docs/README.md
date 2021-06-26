@@ -1,4 +1,6 @@
-# 【狂】JavaWeb
+# JavaWeb
+
+狂神说Java系列-个人学习笔记
 
 ## 基本概念
 
